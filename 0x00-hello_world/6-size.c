@@ -18,6 +18,5 @@ int main(void)
 	printf("Size of long: %zu bytes\n", sizeof(longType));
 	printf("Size of long long: %zu bytes\n", sizeof(long longType));
 	printf("Size of char: %zu bytes\n", sizeof(charType));
-
 	return (0);
 }
