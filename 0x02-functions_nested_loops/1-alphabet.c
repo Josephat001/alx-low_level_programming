@@ -3,7 +3,7 @@
 
 /**
  * main - prints description.
- *Description: function prints the alphabet in lowercase.
+ * Description: \brief This function prints the alphabet in lowercase.
  *
  * Return: Nothing (Success)
  */
