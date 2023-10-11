@@ -1,21 +1,22 @@
-#include "main.h"
+##include "main.h"
 
 /**
- * print_alphabet_x10 prints the alphabet.
- * Description: This function prints the alphabet in lowercase for 10 times.
- * Return: Nothing (Success)
+ * print_alphabet_x10 - No entry point
+ *
+ * Return: On success Nothing.
  */
 
 void print_alphabet_x10(void)
 {
-	char xy;
+	char al;
 	int i;
-	for (int i = 0; i < 10; i++)
+
+	for (i = 0; i <= 9; i++)
 	{
-		for (char xy = 'a'; xy <= 'z'; xy++)
+		for (al = 'a'; al <= 'z'; al++)
 		{
-			_putchar(xy);
+			_putchar(al);
 		}
-			_putchar('\n');
+		_putchar('\n');
 	}
 }
