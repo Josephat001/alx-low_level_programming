@@ -9,7 +9,7 @@
 
 void times_table(void)
 {
-	int i;
+	int i = 0;
 	int multiplier = 9;
 	int result = i * multiplier;
 
