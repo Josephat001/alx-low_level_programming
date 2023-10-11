@@ -1,8 +1,7 @@
 #include <stdio.h>
 #include "main.h"
-
 /**
- * print_sign - check main
+* print_sign - check main
  * @n: An integer input
  * Description: Write a function that prints the sign of a number
  * Return: print the sign of n
