@@ -1,4 +1,4 @@
-##include "main.h"
+#include "main.h"
 
 /**
  * print_alphabet_x10 - No entry point
@@ -8,14 +8,14 @@
 
 void print_alphabet_x10(void)
 {
-	char al;
+	char ch;
 	int i;
 
 	for (i = 0; i <= 9; i++)
 	{
-		for (al = 'a'; al <= 'z'; al++)
+		for (ch = 'a'; ch <= 'z'; ch++)
 		{
-			_putchar(al);
+			_putchar(ch);
 		}
 		_putchar('\n');
 	}
