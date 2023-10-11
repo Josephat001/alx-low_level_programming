@@ -6,9 +6,9 @@
  * Return: 0 or 1.
  */
 
-int _islower(int i)
+int _islower(int ch)
 {
-	if (i >= 'a' && i <= 'z')
+	if (ch >= 'a' && ch <= 'z')
 	{
 		return (1);
 	}
