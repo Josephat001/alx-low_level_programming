@@ -2,10 +2,10 @@
 #include "main.h"
 
 /**
- * print_last_digit - check main
- * @n: Integer input
+ * print_last_digit - Check main
+ * @n: An integer input
  * Description: This function prints the last digit of a number
- * Return: last digit of n
+ * Return: last digit of number n
  */
 
 int print_last_digit(int n)
@@ -22,5 +22,5 @@ int print_last_digit(int n)
 		last = -1 * n % 10;
 		_putchar(last + '0');
 	}
-	return (last % 10);
+	return (last);
 }
