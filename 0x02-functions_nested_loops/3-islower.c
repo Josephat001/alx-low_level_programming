@@ -1,10 +1,17 @@
 #include "main.h"
 
+Here’s the revised source code with added descriptions for the function _islower and its parameter ch:
+
+#include "main.h"
+
 /**
- * main - _islower check lowercase
- * Description: This function checks whether the alphabet is in lowercase.
- * Return: 0 or 1.
- */
+ * _islower - Checks if a character is lowercase
+ * @ch: The character to be checked
+ *
+ * Description: This function checks if the character 'ch' is a lowercase letter.
+ *
+ * Return: 1 if 'ch' is lowercase, 0 otherwise.
+ *//
 
 int _islower(int ch)
 {
