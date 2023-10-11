@@ -3,7 +3,7 @@
 
 /**
  * times_table - check main
- * Description: This function prints the 9 times table starting from 0.
+ * Description: This function prints the 9 times table, starting with 0
  * Return: Nothing
  */
 
@@ -34,6 +34,7 @@ void times_table(void)
 				if (j < 9)
 				{
 					_putchar(',');
+					_putchar(' ');
 					_putchar(' ');
 				}
 			}
