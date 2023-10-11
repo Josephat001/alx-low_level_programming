@@ -2,7 +2,7 @@
 
 /**
  * main - Entry point
- * Description: computes and prints the sum of all the multiples of 3 or 5
+ * Description: This function prints the sum of all the multiples of 3 or 5
  * Return: Always 0
  */
 
