@@ -2,9 +2,9 @@
 #include "main.h"
 
 /**
- * int_abs - check main
+ * _abs - check main
  * @n: Integer input
- * Description: Write a function that prints the absolute value of an integer.
+ * Description: This function prints the absolute value of an integer.
  * Return: the absolute value of n
  */
 
