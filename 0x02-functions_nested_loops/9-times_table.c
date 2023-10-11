@@ -11,6 +11,7 @@ void times_table(void)
 {
 	int i;
 	int multiplier = 9;
+	int result = i * multiplier;
 
 	for (i = 0; i <= 10; i++)
 	{
@@ -21,8 +22,6 @@ void times_table(void)
 		_putchar(' ');
 		_putchar('=');
 		_putchar(' ');
-		int result = i * multiplier;
-
 		_putchar((result / 10 + '0'));
 		_putchar((result % 10 + '0'));
 		_putchar('\n');
