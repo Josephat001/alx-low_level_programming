@@ -20,22 +20,16 @@ void times_table(void)
 			if (ret <= 9)
 			{
 				_putchar(ret + '0');
-				if (j < 9)
-				{
-					_putchar(',');
-					_putchar(' ');
-					_putchar(' ');
-				}
+				_putchar(',');
+				_putchar(' ');
+				_putchar(' ');
 			}
 			else
 			{
 				_putchar((ret / 10) + '0');
 				_putchar((ret % 10) + '0');
-				if (j < 9)
-				{
-					_putchar(',');
-					_putchar(' ');
-				}
+				_putchar(',');
+				_putchar(' ');
 			}
 		}
 		_putchar('\n');
