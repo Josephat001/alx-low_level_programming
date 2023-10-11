@@ -4,8 +4,8 @@
 /**
  * int_abs - check main
  * @n: Integer input
- * Description: This function computes the absolute value of an integer.
- * Return: absolute value of n
+ * Description: Write a function that prints the absolute value of an integer.
+ * Return: the absolute value of n
  */
 
 int _abs(int n)
