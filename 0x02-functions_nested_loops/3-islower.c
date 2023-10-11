@@ -2,16 +2,16 @@
 
 /**
  * _islower - Checks if a character is lowercase
- * @ch: The character to be checked
+ * @i: The character to be checked
  *
- * Description: This function checks if the character 'ch' is a lowercase letter.
+ * Description: This function checks if the character 'i' is a lowercase letter
  *
- * Return: 1 if 'ch' is lowercase, 0 otherwise.
+ * Return: 1 if 'i' is lowercase, 0 otherwise.
  */
 
-int _islower(int ch)
+int _islower(int i)
 {
-	if (ch >= 'a' && ch <= 'z')
+	if (i >= 'a' && i <= 'z')
 	{
 		return (1);
 	}
