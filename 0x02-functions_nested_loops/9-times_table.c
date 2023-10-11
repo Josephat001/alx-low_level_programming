@@ -13,8 +13,8 @@ void times_table(void)
 	int multiplier = 9;
 
 	for (i = 0; i <= 10; i++)
-	int result = i * multiplier;
 	{
+		int result = i * multiplier;
 		_putchar((i + '0'));
 		_putchar('x');
 		_putchar(' ');
