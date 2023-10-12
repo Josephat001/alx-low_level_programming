@@ -3,8 +3,8 @@
 
 /**
  * print_line - check main
- * @n: an integer
- * Description: This function prints a straight line
+ * @n: times a straight line is printed
+ * Description: This function prints a straight line n times
  *
  * Return: Nothing
  */
