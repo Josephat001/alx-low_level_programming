@@ -5,7 +5,7 @@
  * more_numbers - check main
  * Description: This function prints numbers multiple times
  *
- * Return: Always 0
+ * Return: Nothing
  */
 
 void more_numbers(void)
@@ -16,7 +16,7 @@ void more_numbers(void)
 	{
 		for (j = '0'; j < 15; j++)
 		{
-			if (j > 9)
+			if (j >= 10)
 				_putchar((j / 10) + 48);
 			_putchar((j % 10) + 48);
 		}
