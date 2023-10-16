@@ -1,14 +1,15 @@
 #include "main.h"
 
 /**
- * print_number - check main..
+ * print_number - check main.
+ * Description: This function prints an integer.
  * @n: an input integer.
- * Return: no return.
+ * Return: nothing.
  */
 
 void print_number(int n)
 {
-	unsigned int m, d, count;
+	unsigned int m, p, count;
 
 	if (n < 0)
 	{
@@ -20,12 +21,12 @@ void print_number(int n)
 		m = n;
 	}
 
-	d = m;
+	p = m;
 	count = 1;
 
-	while (d > 9)
+	while (p > 9)
 	{
-		d /= 10;
+		p /= 10;
 		count *= 10;
 	}
 
