@@ -13,9 +13,9 @@ int _strlen(char *s)
  {
      int swap;
 
-     int l = 0;
-     while (s[l]) 
-            l++;
+     int i = 0;
+     while (s[i]) 
+            i++;
 
-     return (l);
+     return (i);
   } 
