@@ -5,7 +5,7 @@
  * puts2 - check 6-main.c
  * Description: This function prints every other character of a string,
  * starting with the first character
- *
+ * @str: the string to be printed
  * Return: void
  */
 
