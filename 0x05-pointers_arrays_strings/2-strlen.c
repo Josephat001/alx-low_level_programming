@@ -6,7 +6,7 @@
  * Description: This function prints the length of the string 's'
  * @s: the string whose length is to be printed
  *
- * Return: Always 0 (Success).
+ * Return: void.
  */
 
 int _strlen(char *s)
