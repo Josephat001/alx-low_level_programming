@@ -5,7 +5,7 @@
  * puts2 - check 6-main.c
  * Description: This function prints every other character of a string,
  * starting with the first character
- * @str: the string to be printed
+ * @str: pointer to the string to be printed
  * Return: void
  */
 
@@ -15,8 +15,11 @@ void puts2(char *str)
 
 	while (str[i] != '\0')
 	{
-		_putchar(str[i]);
-		i += 2;
+		if (i % 2 == 0)
+		{
+			_putchar(str[i]);
+		}
+		i++;
 	}
 	_putchar('\n');
 }
