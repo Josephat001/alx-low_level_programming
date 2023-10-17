@@ -26,26 +26,4 @@ void rev_string(char *s)
 		s[j--] = s[i];
 		s[i++] = temp;
 	}  
-
-	/*temp, char;
-	int len = 0;
-	char *stt = str;
-	char *stp = str;
-
-	char = temp;
-	while (*stp != '\0')
-	{
-		len++;
-		stp++;
-	}
-	stp--;
-
-	while (stt < stp)
-	{
-		temp = *stt;
-		*stt = *stp;
-		*stp = temp;
-		stt++;
-		stp--;
-	}*/
 }
