@@ -10,15 +10,12 @@
  */
 
 int _strlen(char *s)
-{
-	int swap; 
-	int len = 0;
+ {
+     int swap;
 
-	while (s[len])
-	{
-		len++;
-		s++;
-		return (len);
+     int l = 0;
+     while (s[l]) 
+            l++;
 
-	}
-}
+     return (l);
+  } 
