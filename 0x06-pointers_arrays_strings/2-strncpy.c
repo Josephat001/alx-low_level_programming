@@ -11,12 +11,12 @@
 
 char *_strncpy(char *dest, char *src, int n)
 {
-	int byteCount;
+	int a;
 
-	for (byteCount = 0; byteCount < n && src[byteCount] != '\0'; byteCount++)
-		dest[byteCount] = src[byteCount];
-	for (; byteCount < n; byteCount++)
-		dest[byteCount] = '\0';
+	for (a = 0; a < n && src[a] != '\0'; a++)
+		dest[a] = src[a];
+	for (; a < n; a++)
+		dest[a] = '\0';
 
 	return (dest);
 }
