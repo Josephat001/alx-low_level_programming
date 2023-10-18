@@ -13,13 +13,14 @@
 char *_strcpy(char *dest, char *src)
 {
 	int len = 0;
+	int i;
 
 	while (src[len] != '\0')
 	{
 		len++;
 	}
 
-	while (*src != '\0')
+	while (i = 0; i < 1)
 	{
 		*dest = *src;
 		dest++;
