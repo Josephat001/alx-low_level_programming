@@ -7,7 +7,7 @@
  * to the buffer pointed to by 'dest'
  * @src: a pointer
  * @dest: a pointer
- * Return: void
+ * Return: a string of character if successful 
  */
 
 char *_strcpy(char *dest, char *src)
