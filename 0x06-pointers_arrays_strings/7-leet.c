@@ -7,7 +7,7 @@
  * Letters o and O are replaced by 0
  * Letters t and T are replaced by 7
  * Letters l and L are replaced by 1
- * @str: a string been pointed.
+ * @s: a string been pointed.
  *
  *Return: str
  */
