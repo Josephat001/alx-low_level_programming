@@ -2,7 +2,7 @@
 #include "main.h"
 /**
  * cap_string - check main
- * Description: This function capitalizes every first letter of a word in a string.
+ * Description: function capitalizes every first letter of a word in a string.
  * separators of words are:  space, tabulation, new line,
  * ,, ;, ., !, ?, ", (, ), {, and }.
  * @str: pointer to string.
@@ -24,7 +24,7 @@ char *cap_string(char *str)
 		    || str[c] == ',' || str[c] == ';' || str[c] == '.'
 		    || str[c] == '.' || str[c] == '!' || str[c] == '?'
 		    || str[c] == '"' || str[c] == '(' || str[c] == ')'
-		    || str[c] == '{' || str[] == '}')
+		    || str[c] == '{' || str[c] == '}')
 		{
 			if (str[c + 1] >= 97 && str[c + 1] <= 122)
 			{
