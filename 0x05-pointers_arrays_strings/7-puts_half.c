@@ -9,26 +9,28 @@
  * Return: void
  */
 
-	int n, len, m;
+void puts_half(char *str)
+{
+	int n, length, mid;
 
-	len = 0;
-	while (str[len] != '\0')
+	length = 0;
+	while (str[length] != '\0')
 	{
-		len++;
+		length++;
 	}
 
-	if (len % 2 == 0)
+	if (length % 2 == 0)
 	{
-		m = len / 2;
-		for (n = m; n < len; n++)
+		mid = length / 2;
+		for (n = mid; n < length; n++)
 		{
 			_putchar(str[n]);
 		}
 	}
 	else
 	{
-		m = (len - 1) / 2;
-		for (n = m + 1; n < len; n++)
+		mid = (length - 1) / 2;
+		for (n = mid + 1; n < length; n++)
 		{
 			_putchar(str[n]);
 		}
