@@ -28,5 +28,13 @@ void puts_half(char *str)
 			_putchar(str[i]);
 		}
 	}
+	else
+	{
+		n = length_of_the_string / 2;
+		for (i = n; i < length_of_the_string; i++)
+		{
+			_putchar(str[i]);
+		}
+	}
 	_putchar('\n');
 }
