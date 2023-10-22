@@ -2,10 +2,10 @@
 #include "main.h"
 
 /**
- *_atoi - rhis function converts a string to an integer.
- *@s: a pointer to string.
+ * _atoi - rhis function converts a string to an integer.
+ * @s: a pointer to string.
  *
- *Return: the resulted integer.
+ * Return: the resulted integer.
  */
 
 int _atoi(char *s)
