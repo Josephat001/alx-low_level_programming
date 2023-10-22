@@ -7,6 +7,7 @@
  *
  *Return: the resulted integer.
  */
+
 int _atoi(char *s)
 {
 	int index, ind2;
