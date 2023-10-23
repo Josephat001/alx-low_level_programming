@@ -15,18 +15,23 @@ unsigned int _strspn(char *s, char *accept)
 	int i;
 	size_t length = 0;
 
-        while (s[length] != '\0') {
-        int found = 0;
-        for (i = 0; accept[i] != '\0'; i++) {
-            if (s[length] == accept[i]) {
-                found = 1;
-                break;
-            }
-        }
-        if (!found) {
-            break;
-        }
-        length++;
-    }
-    return length;
-}	
+	while (s[length] != '\0')
+	{
+		int found = 0;
+
+		for (i = 0; accept[i] != '\0'; i++)
+		{
+			if (s[length] == accept[i])
+			{
+				found = 1;
+				break;
+			}
+		}
+		if (!found)
+		{
+			break;
+		}
+		length++;
+	}
+	return (length);
+}
