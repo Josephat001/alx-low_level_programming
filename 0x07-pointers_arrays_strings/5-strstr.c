@@ -22,8 +22,8 @@ char *_strstr(char *haystack, char *needle)
 
 		while (*current_n != '\0' && *current_h == *current_n)
 		{
-			*current_h++;
-			*current_n++;
+			current_h++;
+			current_n++;
 		}
 
 		if (*current_n == '\0')
