@@ -13,14 +13,23 @@
 
 void print_diagsums(int *a, int size)
 {
-	int i;
-	int D1, D2;
 
-	for (i = 0; i < size; i++)
-	{
-		D1 += a[i * size + i];
-		D2 += a[i * size + (size - i - 1)];
-	}
-	_putchar(D1);
-	_putchar(D2);
+int D1 = 0;
+int D2 = 0;
+int row, i;
+
+for (row = 0; row < size; row++)
+{
+i = (row * size) + row;
+D1 += a[i];
+}
+
+for (row = 1; row <= size; row++)
+{
+i = (row * size) - row;
+D2 += a[i];
+}
+
+printf("%d, %d\n", D1, D2);
+
 }
