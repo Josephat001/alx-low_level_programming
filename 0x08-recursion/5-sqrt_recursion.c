@@ -2,15 +2,32 @@
 #include "main.h"
 
 /**
- * _sqrt_recursion - check main
- * Description: This function returns the natural square root of a number.
- * @n: The number whose natural square root is to be returned.
- * @a: an integer parameter used in the find_sqrt function
- *
- * Return: -1 if 'n' does not have a natural square root, or, the result of 'n'
- */
+* find_root - find square root of n, starting from the smallest possible, 0
+* @n: the number whose natural square root is to be located
+* @a: test the root
+* Return: -1 if not natural root, or natural square root.
+*/
 
-int find_sqrt(int n, int a);
+int find_root(int n, int a)
+{
+	if (a * a > n)
+	{
+		return (-1);
+	}
+	
+	if (a * a == n)
+	{
+		return (a);
+	}
+	
+	return (find_root(n, a + 1));
+}
+
+/**
+* _sqrt_recursion - this function finds the natural square root of n
+* @n: the number whose natural square root is to be located
+* Return: -1 if not natural root, or natural square root. 
+*/
 
 int _sqrt_recursion(int n)
 {
@@ -18,36 +35,6 @@ int _sqrt_recursion(int n)
 	{
 		return (-1);
 	}
-	else if (n == 0 || n == 1)
-	{
-		return (n);
-	}
-	else
-	{
-		return (find_sqrt(n, 1));
-	}
-}
-
-/*
- * find_sqrt
- * Description: helper function used to search for the square root of a number
- * @a: an integer parameter used in the find_sqrt function
- * @n: n
- * Return: -1 if 'n' does not have a natural square root, or, the result of 'n'
- */
-
-int find_sqrt(int n, int a)
-{
-	if (a * a == n)
-	{
-		return (a);
-	}
-	else if (a * a > n)
-	{
-		return (-1);
-	}
-	else
-	{
-		return (find_sqrt(n, a + 1));
-	}
+	
+	return (find_root(n, 0));
 }
