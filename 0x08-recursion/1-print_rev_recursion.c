@@ -6,7 +6,7 @@
  * Description: this function prints a string in reverse.
  * @s: the string to be printed
  *
- * Return: always 0 upon success
+ * Return: void
  */
 
 void _print_rev_recursion(char *s)
