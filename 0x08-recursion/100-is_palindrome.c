@@ -1,7 +1,5 @@
 #include <stdio.h>
-#include <string.h>
-
-int is_checker(char *s, int start, int end);
+#include "main.h"
 
 /**
  * is_palindrome - check main.c
