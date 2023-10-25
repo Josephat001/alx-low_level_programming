@@ -2,14 +2,14 @@
 #include "main.h"
 
 /**
- * is_root - a helper function to check if 'n' is a prime number
+ * is_prime - a helper function to check if 'n' is a prime number
  * @n: the integer to be checked
  * @a: the divisor to test
  *
  * Return: 1 if the input integer is a prime number, otherwise 0
  */
 
-int is_root(int n, int a)
+int is_prime(int n, int a)
 {
 	if (n <= 1)
 	{
@@ -26,7 +26,7 @@ int is_root(int n, int a)
 		return (0);
 	}
 
-	return (is_root(n, a + 1));
+	return (is_prime(n, a + 1));
 }
 
 /**
@@ -38,6 +38,6 @@ int is_root(int n, int a)
 
 int is_prime_number(int n)
 {
-	return (is_root(n, 2));
+	return (is_prime(n, 2));
 }
 
