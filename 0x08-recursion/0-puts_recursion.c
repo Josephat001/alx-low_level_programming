@@ -2,14 +2,14 @@
 #include "main.h"
 
 /**
- * _puts_recursion - check main
- * Description: this function prints a string, followed by a new line.
- * @s: the string to be printed
- *
- * Return: always 0 upon success
- */
+* _print_rev_recursion - Prints a string in reverse followed by a new line
+*
+* @s: Pointer to use
+*
+* Return: void
+*/
 
-void _puts_recursion(char *s)
+void _print_rev_recursion(char *s)
 {
 if (*s == '\0')
 
