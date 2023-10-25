@@ -2,9 +2,8 @@
 #include "main.h"
 
 /**
-* _print_rev_recursion - Prints a string in reverse followed by a new line
-*
-* @s: Pointer to use
+* _print_rev_recursion - This function prints a string in reverse followed by a new line
+* @s: The pointer to use
 *
 * Return: void
 */
