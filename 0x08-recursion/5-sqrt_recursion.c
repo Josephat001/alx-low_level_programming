@@ -14,19 +14,19 @@ int find_root(int n, int a)
 	{
 		return (-1);
 	}
-	
+
 	if (a * a == n)
 	{
 		return (a);
 	}
-	
+
 	return (find_root(n, a + 1));
 }
 
 /**
 * _sqrt_recursion - this function finds the natural square root of n
 * @n: the number whose natural square root is to be located
-* Return: -1 if not natural root, or natural square root. 
+* Return: -1 if not natural root, or natural square root.
 */
 
 int _sqrt_recursion(int n)
@@ -35,6 +35,6 @@ int _sqrt_recursion(int n)
 	{
 		return (-1);
 	}
-	
+
 	return (find_root(n, 0));
 }
