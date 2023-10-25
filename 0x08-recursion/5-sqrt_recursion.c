@@ -4,6 +4,9 @@
 /**
  * _sqrt_recursion - check main
  * Description: This function returns the natural square root of a number.
+ *
+ * find_sqrt - Recursively search for the square root of a number.
+ *
  * @n: The number whose natural square root is to be returned.
  * @a: an integer parameter used in the find_sqrt function
  *
@@ -29,8 +32,7 @@ int _sqrt_recursion(int n)
 }
 
 /*
- * find_sqrt
- * Description: helper function used to search for the square root of a number
+ * @find_sqrt - Recursively search for the square root of a number.
  * @a: an integer parameter used in the find_sqrt function
  * @n: n
  * Return: -1 if 'n' does not have a natural square root, or, the result of 'n'
