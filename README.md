@@ -1,1 +1,1 @@
-This is a first hand repo containing project tasks on programming.
+This is a first hand repo containing project tasks on C - programming.
