@@ -50,5 +50,5 @@ int wildcmp_recursive(char *s1, char *s2)
 
 int wildcmp(char *s1, char *s2)
 {
-        return (wildcmp_recursive(s1, s2));
+	return (wildcmp_recursive(s1, s2));
 }
