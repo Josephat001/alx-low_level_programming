@@ -1,6 +1,10 @@
 #!/bin/bash
 
-gcc -Wall -Wextra -Werror -pedantic -c *.c
+for file in *.c;
+do
+	gcc -c "$file"
+done
 
-ar -rcs liball.a *.o
+ar rcs liball.a *.o
 
+rm -f *.o
