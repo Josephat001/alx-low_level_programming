@@ -1,4 +1,9 @@
 #include "main.h"
+/**
+ * main - displays the characters of a string
+ *
+ * Return: always 0 upon success
+ */
 
 int main(void)
 {
