@@ -4,8 +4,8 @@
 
 /**
  * string_nconcat - concatenates two strings
- * @s1: pointer to the destination string
- * @s2: pointer to the string to be concatenated
+ * @s1: pointer to the source string
+ * @s2: pointer to the destination string
  * @n: first bytes of s2
  * Return: pointer to the newly allocated memory
  */
@@ -51,17 +51,4 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	}
 	concat[a + b] = '\0';
 	return (concat);
-}
-/**
- * _strlen - returns the length of a string
- * @s: string s
- * Return: length of string
- */
-int _strlen(char *s)
-{
-	char *p = s;
-
-	while (*s)
-		s++;
-	return (s - p);
 }
