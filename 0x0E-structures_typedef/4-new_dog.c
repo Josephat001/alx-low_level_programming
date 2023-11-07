@@ -13,8 +13,8 @@
 
 dog_t *new_dog(char *name, float age, char *owner)
 {
-dog_t *dog;
 unsigned int a, namex, ownerx;
+dog_t *dog;
 
 if (name == NULL || owner == NULL)
 return (NULL);
@@ -45,7 +45,7 @@ free(dog->name);
 free(dog);
 return (NULL);
 }
-for (a = 0; a < ownerx; x++)
+for (a = 0; a < ownerx; a++)
 dog->owner[a] = owner[a];
 return (dog);
 }
