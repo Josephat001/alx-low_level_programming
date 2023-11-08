@@ -11,43 +11,41 @@
  * Return: pointer to the new dog, or NULL on failure
  */
 
-typedef struct dog
-{
-    char *name;
-    float age;
-    char *owner;
-} dog_t;
-
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	dog_t *dog = malloc(sizeof(dog_t));
+unsigned int a, namex, ownerx;
+dog_t *dog;
 
-	if (name == NULL || owner == NULL)
-	{
-		return (NULL);
-	}
+if (name == NULL || owner == NULL)
+return (NULL);
+dog = malloc(sizeof(dog_t));
+if (dog == NULL)
+return (NULL);
+for (namex = 0; name[namex]; namex++)
+;
+namex++;
+dog->name = malloc(namex * (sizeof(char)));
+if (dog->name == NULL)
+{
+free(dog);
+return (NULL);
+}
+for (a = 0; a < namex; a++)
+dog->name[a] = name[a];
 
-	if (dog == NULL)
-	{
-		return (NULL);
-	}
+dog->age = age;
 
-	dog->name = strdup(name);
-	if (dog->name == NULL)
-	{
-		free(dog);
-		return (NULL);
-	}
-
-	dog->age = age;
-
-	dog->owner = strdup(owner);
-	if (dog->owner == NULL)
-	{
-		free(dog->name);
-		free(dog);
-		return (NULL);
-	}
-
-	return (dog);
+for (ownerx = 0; owner[ownerx]; ownerx++)
+;
+ownerx++;
+dog->owner = malloc(ownerx * (sizeof(char)));
+if (dog->owner == NULL)
+{
+free(dog->name);
+free(dog);
+return (NULL);
+}
+for (a = 0; a < ownerx; a++)
+dog->owner[a] = owner[a];
+return (dog);
 }
