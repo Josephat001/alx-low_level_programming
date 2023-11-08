@@ -1,3 +1,6 @@
+#ifndef ARRAY_ITERATOR_H
+#define ARRAY_ITERATOR_H
+
 #include <stdio.h>
 #include "function_pointers.h"
 
@@ -19,3 +22,5 @@ void array_iterator(int *array, size_t size, void (*action)(int))
 		action(array[b]);
 	}
 }
+
+#endif
