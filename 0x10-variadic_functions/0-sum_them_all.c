@@ -4,8 +4,8 @@
 
 /**
  * sum_them_all -  returns the sum of all its parameters
- * @n: the last known parameter of int type
- * Return: the sum, or 0 if n = 0.
+ * @n: integers to add
+ * Return: sum
  */
 
 int sum_them_all(const unsigned int n, ...)
