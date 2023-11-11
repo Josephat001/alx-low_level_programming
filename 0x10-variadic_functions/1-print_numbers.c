@@ -20,12 +20,13 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	{
 		num = va_arg(pa, int);
 		printf("%d", num);
-		
+
 		if (b < n - 1 && separator != NULL)
 		{
 			printf("%s", separator);
 		}
 	}
+
 	putchar('\n');
 	va_end(pa);
 }
